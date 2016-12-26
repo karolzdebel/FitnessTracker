@@ -11,19 +11,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.karol.fitnesstracker.FitnessTracker">
-
-    <Button
-        android:id="@+id/change_button_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Register Page"/>
-
-    <Button
-        android:id="@+id/change_button_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Login Page"/>
+    
 
 </LinearLayout>
