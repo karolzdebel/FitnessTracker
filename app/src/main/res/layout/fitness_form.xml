@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="4"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- Input Age -->
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp">
+
+        <TextView
+            android:minWidth="85dp"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:id="@+id/fitness_form_age_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fitness_form_age_text"/>
+
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/fitness_form_age_textview"/>
+
+    </RelativeLayout>
+
+    <!-- Input Weight -->
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp">
+
+        <TextView
+            android:minWidth="85dp"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:id="@+id/fitness_form_weight_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fitness_form_weight_text"/>
+
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/fitness_form_weight_textview"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <!-- Input Height -->
+
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:minWidth="85dp"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:id="@+id/fitness_form_height_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fitness_form_height_text"/>
+
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/fitness_form_height_textview"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <!-- Input Activity Level -->
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp">
+
+        <TextView
+            android:minWidth="85dp"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:id="@+id/fitness_form_activity_level_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fitness_form_activity_level_text"/>
+
+        <Spinner
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/fitness_form_activity_level_textview"
+            android:prompt="@string/fitness_form_activity_prompt"
+            android:id="@+id/fitness_form_activity_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/fitness_form_submit_button"
+        android:text="@string/fitness_form_submit_button_text"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

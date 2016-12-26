@@ -1,4 +1,17 @@
 <resources>
+    <string-array name="fitness_form_activity">
+        <item>Extreme</item>
+        <item>Moderate</item>
+        <item>Low</item>
+    </string-array>
+
+    <string-array name="fitness_form_goal">
+        <item>Lose Fat</item>
+        <item>Gain Muscle</item>
+        <item>Maintain Weight</item>
+        <item>Other</item>
+    </string-array>
+
     <string name="app_name">FitnessTracker</string>
     <string name="register_first_name_text">First Name:</string>
     <string name="register_last_name_text">Last Name:</string>
@@ -11,4 +24,10 @@
     <string name="login_password_text">Pasword:</string>
     <string name="login_login_button_text">Login</string>
     <string name="login_register_button_text">Register</string>
+    <string name="fitness_form_age_text">Age:</string>
+    <string name="fitness_form_weight_text">Weight:</string>
+    <string name="fitness_form_height_text">Height:</string>
+    <string name="fitness_form_activity_level_text">Activity Level:</string>
+    <string name="fitness_form_activity_prompt">Activity Level</string>
+    <string name="fitness_form_submit_button_text">Submit</string>
 </resources>
