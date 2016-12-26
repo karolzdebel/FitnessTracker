@@ -7,4 +7,6 @@
     <string name="register_password_text">Password:</string>
     <string name="confirm_password">Confirm Password:</string>
     <string name="register_button_submit">Submit</string>
+    <string name="login_username_text">Username:</string>
+    <string name="login_password_text">Pasword:</string>
 </resources>
