@@ -30,4 +30,9 @@
     <string name="fitness_form_activity_level_text">Activity Level:</string>
     <string name="fitness_form_activity_prompt">Activity Level</string>
     <string name="fitness_form_submit_button_text">Submit</string>
+    <string name="main_menu_home_text">Home</string>
+    <string name="main_menu_workout_text">Workout Plan</string>
+    <string name="main_menu_progress_text">Progress</string>
+    <string name="main_menu_nutrition_text">Nutrition</string>
+    <string name="main_menu_settings_text">Settings</string>
 </resources>
