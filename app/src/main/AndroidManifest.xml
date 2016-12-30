@@ -15,19 +15,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".Register">
             <intent-filter>
                 <action android:name="android.intent.action.REGISTER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.LOGIN" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".MainTabs"
+            android:label="@string/title_activity_main_tabs"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

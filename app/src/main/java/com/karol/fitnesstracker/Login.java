@@ -2,10 +2,9 @@ package com.karol.fitnesstracker;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.*;
+import android.widget.Button;
 
 /**
  * Created by K on 2016-12-26.
@@ -22,11 +21,12 @@ public class Login extends AppCompatActivity{
         Button registerButton = (Button) findViewById(R.id.login_register_button);
 
         final Intent registerIntent = new Intent(this, Register.class);
+        final Intent mainTabsIntent = new Intent(this, MainTabs.class);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //login here
+                startActivity(mainTabsIntent);
             }
         });
 
