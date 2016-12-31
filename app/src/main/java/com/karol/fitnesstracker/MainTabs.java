@@ -46,6 +46,14 @@ public class MainTabs extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.main_tabs_tablayout);
         tabLayout.setupWithViewPager(mViewPager);
+
+        int[] tabIcons = {R.drawable.ic_home_button,R.drawable.ic_workout_button
+            ,R.drawable.ic_progress_button,R.drawable.ic_nutrition_button,R.drawable.ic_settings_button};
+
+        for (int i=0;i<5;i++){
+            tabLayout.getTabAt(i).setIcon(tabIcons[i]);
+        }
+
     }
 
 
@@ -131,18 +139,6 @@ public class MainTabs extends AppCompatActivity {
 
         @Override
         public CharSequence getPageTitle(int position) {
-            switch (position) {
-                case 0:
-                    return "Home";
-                case 1:
-                    return "Workout";
-                case 2:
-                    return "Progress";
-                case 3:
-                    return "Nutrition";
-                case 4:
-                    return "Settings";
-            }
             return null;
         }
     }
