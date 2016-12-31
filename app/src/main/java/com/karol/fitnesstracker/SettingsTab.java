@@ -13,9 +13,22 @@ import android.view.ViewGroup;
 
 public class SettingsTab extends Fragment{
 
+    public SettingsTab(){
+    }
+
+    public static SettingsTab newInstance() {
+
+        Bundle args = new Bundle();
+
+        SettingsTab fragment = new SettingsTab();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
+        View settingsView = inflater.inflate(R.layout.settings_layout,container,false);
+        return settingsView;
     }
 }

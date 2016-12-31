@@ -13,10 +13,23 @@ import android.view.ViewGroup;
 
 public class ProgressTab extends Fragment {
 
+    public ProgressTab(){
+    }
+
+    public static ProgressTab newInstance() {
+
+        Bundle args = new Bundle();
+
+        ProgressTab fragment = new ProgressTab();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
+        View progressView = inflater.inflate(R.layout.progress_layout,container,false);
+        return progressView;
     }
 
 }

@@ -13,10 +13,23 @@ import android.view.ViewGroup;
 
 public class HomeTab extends Fragment{
 
+    public HomeTab(){
+    }
+
+    public static HomeTab newInstance() {
+        
+        Bundle args = new Bundle();
+        
+        HomeTab fragment = new HomeTab();
+        fragment.setArguments(args);
+        return fragment;
+    }
+    
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.home,container,false);
-        return rootView;
+        View homeView = inflater.inflate(R.layout.home_layout,container,false);
+        return homeView;
     }
+
 }
