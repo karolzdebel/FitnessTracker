@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/layout_register"
+    android:layout_marginTop="@dimen/register_vertical_margin"
+    android:layout_marginBottom="@dimen/register_vertical_margin"
+    android:layout_marginRight="@dimen/register_horizontal_margin"
+    android:layout_marginLeft="@dimen/register_horizontal_margin"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/register_title"
+        android:text="@string/register_title_text"
+        android:textSize="25sp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <!-- First Name -->
     <LinearLayout
@@ -16,14 +29,12 @@
             android:textAlignment="textEnd"
             android:minWidth="130dp"
             android:textSize="15sp"
-            android:layout_marginTop="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/register_first_name_text"
             android:id="@+id/register_first_name" />
 
         <EditText
-            android:layout_margin="15dp"
             android:id="@+id/register_first_name_edit"
             android:inputType="textPersonName"
             android:layout_width="match_parent"
@@ -43,14 +54,12 @@
             android:textAlignment="textEnd"
             android:minWidth="130dp"
             android:textSize="15sp"
-            android:layout_marginTop="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/register_last_name_text"
             android:id="@+id/register_last_name" />
 
         <EditText
-            android:layout_margin="15dp"
             android:id="@+id/register_last_name_edit"
             android:inputType="textPersonName"
             android:layout_width="match_parent"
@@ -70,14 +79,12 @@
             android:textAlignment="textEnd"
             android:minWidth="130dp"
             android:textSize="15sp"
-            android:layout_marginTop="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/register_user_name_text"
             android:id="@+id/register_user_name" />
 
         <EditText
-            android:layout_margin="15dp"
             android:id="@+id/register_username_edit"
             android:inputType="textNoSuggestions"
             android:layout_width="match_parent"
@@ -97,14 +104,12 @@
             android:textAlignment="textEnd"
             android:minWidth="130dp"
             android:textSize="15sp"
-            android:layout_marginTop="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/register_email_text"
             android:id="@+id/register_email" />
 
         <EditText
-            android:layout_margin="15dp"
             android:id="@+id/register_email_edit"
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
@@ -124,14 +129,12 @@
             android:textAlignment="textEnd"
             android:minWidth="130dp"
             android:textSize="15sp"
-            android:layout_marginTop="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/register_password_text"
             android:id="@+id/register_password" />
 
         <EditText
-            android:layout_margin="15dp"
             android:id="@+id/register_password_edit"
             android:inputType="textPassword"
             android:layout_width="match_parent"
@@ -158,7 +161,6 @@
             android:id="@+id/register_confirm_password" />
 
         <EditText
-            android:layout_margin="15dp"
             android:id="@+id/register_confirm_password_edit"
             android:inputType="textPassword"
             android:layout_width="match_parent"
@@ -168,7 +170,7 @@
 
     <!-- Submit button-->
     <Button
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:text="@string/register_button_submit"
         android:layout_width="wrap_content"
