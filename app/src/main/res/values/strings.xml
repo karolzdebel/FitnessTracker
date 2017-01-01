@@ -12,6 +12,27 @@
         <item>Other</item>
     </string-array>
 
+    <string-array name="create_workout_primary_goal">
+        <item>Lose Fat</item>
+        <item>Gain Muscle</item>
+        <item>Strength</item>
+        <item>Endurance</item>
+        <item>General Health</item>
+    </string-array>
+
+    <string-array name="create_workout_intensity">
+        <item>Extreme</item>
+        <item>Moderate</item>
+        <item>Low</item>
+    </string-array>
+
+    <string-array name="create_workout_exercise_type">
+        <item>Weight Training</item>
+        <item>Cardiovascular</item>
+        <item>Weight Cardio Hybrid</item>
+        <item>Other</item>
+    </string-array>
+
     <string name="app_name">FitnessTracker</string>
     <string name="register_first_name_text">First Name:</string>
     <string name="register_last_name_text">Last Name:</string>
@@ -39,4 +60,7 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="register_title_text">Register an Account</string>
+    <string name="create_workout_description_text">Description</string>
+    <string name="create_workout_description_hint_text">General purpose and description of your workout plan</string>
+    <string name="create_workout_plan">Create Workout Plan</string>
 </resources>
