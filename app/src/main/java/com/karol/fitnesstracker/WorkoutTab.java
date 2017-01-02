@@ -1,5 +1,6 @@
 package com.karol.fitnesstracker;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -31,14 +32,13 @@ public class WorkoutTab extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View workoutView = inflater.inflate(R.layout.workout_layout,container,false);
 
-        //Intent createWorkoutIntent = new Intent(this,)
-
+        final Intent createWorkoutIntent = new Intent(getActivity(),CreateWorkout.class);
 
         Button createWorkoutButton = (Button) workoutView.findViewById(R.id.workout_tab_create_workout_button);
         createWorkoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(createWorkoutIntent);
             }
         });
 

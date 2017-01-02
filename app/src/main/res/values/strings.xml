@@ -60,7 +60,10 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="register_title_text">Register an Account</string>
-    <string name="create_workout_description_text">Description</string>
-    <string name="create_workout_description_hint_text">General purpose and description of your workout plan</string>
+    <string name="create_workout_name_text">Name</string>
     <string name="create_workout_plan">Create Workout Plan</string>
+    <string name="create_workout_primary_goal_text">Primary Goal</string>
+    <string name="create_workout_intensity_text">Intensity</string>
+    <string name="create_workout_exercise_text">Type of Exercise</string>
+    <string name="create_workout_length_text">Recommended Length(Weeks)</string>
 </resources>
