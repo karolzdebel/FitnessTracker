@@ -1,11 +1,13 @@
 package com.karol.fitnesstracker;
 
 import android.app.Fragment;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -20,19 +22,38 @@ public class WorkoutPlanInfoFragment extends Fragment {
 
     private static final int MAX_WORKOUT_PLAN_LENGTH = 208;
     private static final int MIN_WORKOUT_PLAN_LENGTH = 1;
+    private CreateWorkoutNavigator myNavigator;
 
     public WorkoutPlanInfoFragment(){
+        setHasOptionsMenu(true);
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setHasOptionsMenu(true);
     }
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.create_workout_menu,menu);
+        super.onCreateOptionsMenu(menu,inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.menu_create_workout_next:
+                myNavigator.startScheduleFragment();
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        myNavigator = (CreateWorkoutNavigator)context;
+        super.onAttach(context);
     }
 
     @Nullable
