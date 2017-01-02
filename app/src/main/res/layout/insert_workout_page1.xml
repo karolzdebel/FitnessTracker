@@ -6,12 +6,13 @@
 
     <TextView
         android:text="@string/create_workout_name_text"
+        android:hint="@string/create_workout_name_hint_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="none"
+        android:inputType="textShortMessage"
         android:id="@+id/create_workout_name" />
 
     <TextView

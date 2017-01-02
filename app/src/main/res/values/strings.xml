@@ -66,4 +66,5 @@
     <string name="create_workout_intensity_text">Intensity</string>
     <string name="create_workout_exercise_text">Type of Exercise</string>
     <string name="create_workout_length_text">Recommended Length(Weeks)</string>
+    <string name="create_workout_name_hint_text">Enter the name of your workout plan</string>
 </resources>
