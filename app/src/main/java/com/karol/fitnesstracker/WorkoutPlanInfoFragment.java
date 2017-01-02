@@ -22,7 +22,7 @@ public class WorkoutPlanInfoFragment extends Fragment {
 
     private static final int MAX_WORKOUT_PLAN_LENGTH = 208;
     private static final int MIN_WORKOUT_PLAN_LENGTH = 1;
-    private CreateWorkoutNavigator myNavigator;
+    private CreateWorkoutPlanNavigator myNavigator;
 
     public WorkoutPlanInfoFragment(){
         setHasOptionsMenu(true);
@@ -52,7 +52,7 @@ public class WorkoutPlanInfoFragment extends Fragment {
 
     @Override
     public void onAttach(Context context) {
-        myNavigator = (CreateWorkoutNavigator)context;
+        myNavigator = (CreateWorkoutPlanNavigator)context;
         super.onAttach(context);
     }
 

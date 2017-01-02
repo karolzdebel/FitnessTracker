@@ -22,6 +22,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
+                android:id="@+id/create_workout_plan_create_workout_button_mon"
+                android:tag="add_workout_button"
                 android:background="@android:color/white"
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimary"
@@ -43,6 +45,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
+                android:id="@+id/create_workout_plan_create_workout_button_tue"
+                android:tag="add_workout_button"
                 android:background="@android:color/white"
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimary"
@@ -64,6 +68,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
+                android:id="@+id/create_workout_plan_create_workout_button_wed"
+                android:tag="add_workout_button"
                 android:background="@android:color/white"
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimary"
@@ -85,6 +91,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
+                android:id="@+id/create_workout_plan_create_workout_button_thu"
+                android:tag="add_workout_button"
                 android:background="@android:color/white"
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimary"
@@ -106,6 +114,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
+                android:id="@+id/create_workout_plan_create_workout_button_fri"
+                android:tag="add_workout_button"
                 android:background="@android:color/white"
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimary"
@@ -127,6 +137,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
+                android:id="@+id/create_workout_plan_create_workout_button_sat"
+                android:tag="add_workout_button"
                 android:background="@android:color/white"
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimary"
@@ -148,6 +160,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
+                android:id="@+id/create_workout_plan_create_workout_button_sun"
+                android:tag="add_workout_button"
                 android:background="@android:color/white"
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimary"

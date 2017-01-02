@@ -32,7 +32,7 @@ public class WorkoutTab extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View workoutView = inflater.inflate(R.layout.workout_layout,container,false);
 
-        final Intent createWorkoutIntent = new Intent(getActivity(),CreateWorkout.class);
+        final Intent createWorkoutIntent = new Intent(getActivity(),CreateWorkoutPlan.class);
 
         Button createWorkoutButton = (Button) workoutView.findViewById(R.id.workout_tab_create_workout_button);
         createWorkoutButton.setOnClickListener(new View.OnClickListener() {
