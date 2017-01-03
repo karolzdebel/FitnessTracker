@@ -4,15 +4,6 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:text="Name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText
-        android:hint="Enter the name of the workout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_marginTop="15dp"
@@ -34,10 +25,11 @@
             android:layout_height="wrap_content"></LinearLayout>
 
         <Button
+            android:id="@+id/add_weight_exercise_button"
             android:background="@android:color/white"
             android:textAllCaps="false"
             android:textColor="@color/colorPrimary"
-            android:text="Add Excercise"
+            android:text="@string/create_strength_workout_add_exercise_button_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

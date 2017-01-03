@@ -12,7 +12,7 @@ import android.view.ViewGroup;
  * Created by K on 2017-01-02.
  */
 
-public class CreateCardioWorkoutFragment extends Fragment implements View.OnClickListener{
+public class AddCardioExerciseFragment extends Fragment implements View.OnClickListener {
 
     private CreateWorkoutPlanNavigator myNavigator;
 
@@ -30,32 +30,31 @@ public class CreateCardioWorkoutFragment extends Fragment implements View.OnClic
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.insert_workout_create_cardio_workout,container,false);
+        View view = inflater.inflate(R.layout.insert_workout_add_cardio_exercise,container,false);
+
         createButtonListeners(view);
+
         return view;
     }
 
-    public CreateCardioWorkoutFragment(){
+    public AddCardioExerciseFragment(){
     }
 
-    public static CreateCardioWorkoutFragment newInstance() {
+    public static AddCardioExerciseFragment newInstance() {
 
         Bundle args = new Bundle();
 
-        CreateCardioWorkoutFragment fragment = new CreateCardioWorkoutFragment();
+        AddCardioExerciseFragment fragment = new AddCardioExerciseFragment();
         fragment.setArguments(args);
         return fragment;
     }
 
     private void createButtonListeners(View v){
-        v.findViewById(R.id.add_cardio_exercise_button).setOnClickListener(this);
+        v.findViewById(R.id.create_cardio_exercise_button).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        switch(v.getId()){
-            case R.id.add_cardio_exercise_button:
-                myNavigator.replaceFragment(AddCardioExerciseFragment.newInstance());
-        }
+
     }
 }

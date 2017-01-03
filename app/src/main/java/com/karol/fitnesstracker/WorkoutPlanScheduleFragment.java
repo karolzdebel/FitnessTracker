@@ -55,10 +55,8 @@ public class WorkoutPlanScheduleFragment extends Fragment implements View.OnClic
 
     @Override
     public void onClick(View v) {
-        Log.d("tag","here2");
         switch(v.getTag().toString()){
             case "add_workout_button":
-                Log.d("tag","here");
                 myNavigator.startAddWorkoutFragment();
 
         }

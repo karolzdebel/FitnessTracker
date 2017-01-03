@@ -13,7 +13,7 @@
         <TextView
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
-            android:text="Other Excercises"
+            android:text="Excercises"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -26,10 +26,11 @@
 
 
         <Button
+            android:id="@+id/create_other_exercise_button"
             android:background="@android:color/white"
             android:textAllCaps="false"
             android:textColor="@color/colorPrimary"
-            android:text="Create Exercise"
+            android:text="Add Exercise"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

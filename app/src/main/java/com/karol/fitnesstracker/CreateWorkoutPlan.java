@@ -46,8 +46,8 @@ public class CreateWorkoutPlan extends AppCompatActivity implements CreateWorkou
     }
 
     public void startAddWorkoutFragment(){
-        CreateWeightWorkoutFragment fragment = CreateWeightWorkoutFragment.newInstance();
-
+        AddWorkoutFragment fragment = AddWorkoutFragment.newInstance();
+        replaceFragment(fragment);
     }
 
     @Override
@@ -66,5 +66,20 @@ public class CreateWorkoutPlan extends AppCompatActivity implements CreateWorkou
     public void startCreateOtherWorkoutFragment() {
         CreateOtherWorkoutFragment fragment = CreateOtherWorkoutFragment.newInstance();
         replaceFragment(fragment);
+    }
+
+    @Override
+    public void startAddWeightExerciseFragment() {
+
+    }
+
+    @Override
+    public void startAddCardioExerciseFragment() {
+
+    }
+
+    @Override
+    public void startAddOtherExerciseFragment() {
+
     }
 }

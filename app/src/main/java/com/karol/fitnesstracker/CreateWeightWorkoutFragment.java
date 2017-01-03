@@ -4,6 +4,7 @@ import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +13,7 @@ import android.view.ViewGroup;
  * Created by K on 2017-01-02.
  */
 
-public class CreateWeightWorkoutFragment extends Fragment {
+public class CreateWeightWorkoutFragment extends Fragment implements View.OnClickListener{
 
     private CreateWorkoutPlanNavigator myNavigator;
 
@@ -30,7 +31,8 @@ public class CreateWeightWorkoutFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.insert_workout_create_strength_workout,container,false);
+        View view = inflater.inflate(R.layout.insert_workout_create_weight_workout,container,false);
+        createButtonListeners(view);
         return view;
     }
 
@@ -44,5 +46,18 @@ public class CreateWeightWorkoutFragment extends Fragment {
         CreateWeightWorkoutFragment fragment = new CreateWeightWorkoutFragment();
         fragment.setArguments(args);
         return fragment;
+    }
+
+    private void createButtonListeners(View v){
+        v.findViewById(R.id.add_weight_exercise_button).setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch(v.getId()) {
+            case R.id.add_weight_exercise_button:
+                Log.d("tag","here");
+                myNavigator.replaceFragment(AddWeightExerciseFragment.newInstance());
+        }
     }
 }
