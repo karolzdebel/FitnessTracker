@@ -4,7 +4,6 @@ import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,7 +55,6 @@ public class CreateWeightWorkoutFragment extends Fragment implements View.OnClic
     public void onClick(View v) {
         switch(v.getId()) {
             case R.id.add_weight_exercise_button:
-                Log.d("tag","here");
                 myNavigator.replaceFragment(AddWeightExerciseFragment.newInstance());
         }
     }

@@ -4,36 +4,36 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <TextView
+        android:text="Exercise Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Enter the name of the exercise"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Machine/Location"
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Specify the machine or location for the performance of this exercise"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-        <TextView
-            android:background="@color/colorPrimary"
-            android:textColor="@android:color/white"
-            android:text="Cardio Excercises"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <!-- Exercise Placeholder-->
-        <LinearLayout
-            android:orientation="vertical"
-            android:id="@+id/insert_workout_add_exercise_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></LinearLayout>
-
-
-        <Button
-            android:id="@+id/create_cardio_exercise_button"
-            android:background="@android:color/white"
-            android:textAllCaps="false"
-            android:textColor="@color/colorPrimary"
-            android:text="Create Exercise"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:text="Instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Describe how the exercise is to be performed"
+        android:maxLines="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

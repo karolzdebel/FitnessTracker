@@ -12,7 +12,7 @@ import android.view.ViewGroup;
  * Created by K on 2017-01-02.
  */
 
-public class AddOtherExerciseFragment extends Fragment implements View.OnClickListener{
+public class CreateWeightExerciseFragment extends Fragment{
 
     private CreateWorkoutPlanNavigator myNavigator;
 
@@ -30,35 +30,19 @@ public class AddOtherExerciseFragment extends Fragment implements View.OnClickLi
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.insert_workout_add_other_exercise,container,false);
-
-        createButtonListeners(view);
-
+        View view = inflater.inflate(R.layout.insert_workout_create_weight_exercise,container,false);
         return view;
     }
 
-    public AddOtherExerciseFragment(){
+    public CreateWeightExerciseFragment(){
     }
 
-    public static AddOtherExerciseFragment newInstance() {
+    public static CreateWeightExerciseFragment newInstance() {
 
         Bundle args = new Bundle();
 
-        AddOtherExerciseFragment fragment = new AddOtherExerciseFragment();
+        CreateWeightExerciseFragment fragment = new CreateWeightExerciseFragment();
         fragment.setArguments(args);
         return fragment;
-    }
-
-    private void createButtonListeners(View v){
-        v.findViewById(R.id.create_other_exercise_button).setOnClickListener(this);
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch(v.getId()){
-            case R.id.create_other_exercise_button:
-                myNavigator.replaceFragment(CreateOtherExerciseFragment.newInstance());
-                break;
-        }
     }
 }

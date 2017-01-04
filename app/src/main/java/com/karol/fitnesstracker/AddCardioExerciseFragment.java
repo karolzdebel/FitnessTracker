@@ -55,6 +55,10 @@ public class AddCardioExerciseFragment extends Fragment implements View.OnClickL
 
     @Override
     public void onClick(View v) {
-
+        switch(v.getId()){
+            case R.id.create_cardio_exercise_button:
+                myNavigator.replaceFragment(CreateCardioExerciseFragment.newInstance());
+                break;
+        }
     }
 }

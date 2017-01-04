@@ -57,7 +57,8 @@ public class AddWeightExerciseFragment extends Fragment implements View.OnClickL
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.add_weight_exercise_button:
-                //myNavigator.replaceFragment();
+                myNavigator.replaceFragment(CreateWeightExerciseFragment.newInstance());
+                break;
         }
     }
 }
