@@ -69,5 +69,8 @@
     <string name="create_workout_name_hint_text">Enter the name of your workout plan</string>
     <string name="create_strength_workout_name_hint">Enter the name of the workout</string>
     <string name="create_strength_workout_name_text">Name</string>
-    <string name="create_strength_workout_add_exercise_button_text">Add Excercise</string>
+    <string name="create_strength_workout_add_exercise_button_text">Add Exercise</string>
+    <string name="excercises">Excercises</string>
+    <string name="add_exercise">Add Exercise</string>
+    <string name="create_workout_plan_create_workout_cardio_exercises_text">Excercises</string>
 </resources>
