@@ -8,11 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import interfaces.CreateWorkoutPlanNavigator;
 import com.karol.fitnesstracker.R;
 
+import interfaces.CreateWorkoutPlanNavigator;
+
 /**
- * Created by K on 2017-01-02.
+ * Created by Karol Zdebel on 2017-01-02.
  */
 
 public class CreateCardioExercise extends Fragment {
@@ -33,9 +34,7 @@ public class CreateCardioExercise extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.create_workout_plan_create_exercise_cardio,container,false);
-
-        return view;
+        return inflater.inflate(R.layout.create_workout_plan_create_exercise_cardio,container,false);
     }
 
     public CreateCardioExercise(){

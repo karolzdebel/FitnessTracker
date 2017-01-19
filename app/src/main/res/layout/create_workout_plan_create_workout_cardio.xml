@@ -16,7 +16,7 @@
         android:orientation="vertical"
         android:id="@+id/insert_workout_add_exercise_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></LinearLayout>
+        android:layout_height="wrap_content"/>
 
 
     <Button
@@ -24,7 +24,7 @@
         android:background="@android:color/white"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
-        android:text="Add Exercise"
+        android:text="@string/create_workout_plan_create_workout_cardio_add_exercise_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

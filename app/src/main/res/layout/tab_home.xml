@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="Home"
+        android:text="@string/tab_home_home_text"
         android:textSize="30sp"
         android:layout_gravity="center"
         android:textAlignment="center"

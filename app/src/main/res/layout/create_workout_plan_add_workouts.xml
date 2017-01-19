@@ -13,7 +13,7 @@
         <TextView
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
-            android:text="Weight Training"
+            android:text="@string/create_workout_plan_add_workouts_weight_training_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <Button
@@ -21,7 +21,7 @@
             android:background="@android:color/white"
             android:textAllCaps="false"
             android:textColor="@color/colorPrimary"
-            android:text="Create Workout"
+            android:text="@string/create_workout_plan_add_workouts_create_workout_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -36,7 +36,7 @@
         <TextView
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
-            android:text="Cardiovascular Training"
+            android:text="@string/create_workout_plan_add_workouts_cardiovascular_training_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <Button
@@ -44,7 +44,7 @@
             android:background="@android:color/white"
             android:textAllCaps="false"
             android:textColor="@color/colorPrimary"
-            android:text="Create Workout"
+            android:text="@string/create_workout_plan_add_workouts_create_workout_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -59,7 +59,7 @@
         <TextView
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
-            android:text="Other"
+            android:text="@string/create_workout_plan_add_workout_other_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <Button
@@ -67,7 +67,7 @@
             android:background="@android:color/white"
             android:textAllCaps="false"
             android:textColor="@color/colorPrimary"
-            android:text="Create Workout"
+            android:text="@string/create_workout_plan_add_workouts_create_workout_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

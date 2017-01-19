@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="Workout"
+        android:text="@string/tab_workout_workout_text"
         android:textSize="30sp"
         android:layout_gravity="center"
         android:textAlignment="center"

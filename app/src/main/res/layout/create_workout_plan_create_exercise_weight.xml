@@ -5,33 +5,33 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="Exercise Name"
+        android:text="@string/create_workout_plan_create_exercise_weight_exercise_name_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
-        android:hint="Enter the name of the exercise"
+        android:hint="@string/create_workout_plan_create_exercise_weight_exercise_name_hint_text"
         android:maxLines="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
-        android:text="Muscle Group"
+        android:text="@string/create_workout_plan_create_exercise_weight_muscle_group_text"
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
-        android:hint="Specify the muscle group the exercise targets"
+        android:hint="@string/create_workout_plan_create_exercise_weight_muscle_group_hint_text"
         android:maxLines="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
         android:layout_marginTop="15dp"
-        android:text="Instructions"
+        android:text="@string/create_workout_plan_create_exercise_weight_instructions_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
-        android:hint="Describe how the exercise is to be performed"
+        android:hint="@string/create_workout_plan_create_exercise_weight_instructions_hint_text"
         android:maxLines="7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
