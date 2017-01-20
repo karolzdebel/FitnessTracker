@@ -9,8 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import interfaces.CreateWorkoutPlanNavigator;
 import com.karol.fitnesstracker.R;
+
+import interfaces.CreateWorkoutPlanNavigator;
 
 /**
  * Created by K on 2017-01-02.
@@ -34,7 +35,7 @@ public class CreateOtherWorkout extends Fragment implements View.OnClickListener
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.create_workout_plan_add_exercise_other,container,false);
+        View view = inflater.inflate(R.layout.create_workout_plan_create_workout_other,container,false);
         createButtonListeners(view);
         return view;
     }

@@ -8,8 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import interfaces.CreateWorkoutPlanNavigator;
 import com.karol.fitnesstracker.R;
+
+import interfaces.CreateWorkoutPlanNavigator;
 
 /**
  * Created by K on 2017-01-02.
@@ -53,13 +54,13 @@ public class AddWeightExercise extends Fragment implements View.OnClickListener{
     }
 
     private void createButtonListeners(View v){
-        v.findViewById(R.id.add_weight_exercise_button).setOnClickListener(this);
+        v.findViewById(R.id.create_weight_exercise_button).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch(v.getId()){
-            case R.id.add_weight_exercise_button:
+            case R.id.create_weight_exercise_button:
                 myNavigator.replaceFragment(CreateWeightExercise.newInstance());
                 break;
         }

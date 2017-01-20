@@ -33,7 +33,6 @@ public class CreateWorkoutPlan extends AppCompatActivity implements CreateWorkou
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
         fragmentTransaction.add(R.id.create_workout_fragment_container,fragment);
-        fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
 
